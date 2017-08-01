@@ -1,6 +1,7 @@
 // * {
 //   border: 1px solid black;
 // }
+
 //Flex
 .flex {
   display: flex;
@@ -32,10 +33,15 @@ body {
   font-family: $main-font-family;
   font-size: 18px;
   margin: 0px;
+  color: $text-color-dark;
 }
 
 .text-white {
   color: white;
+}
+
+.text-bright {
+  color: $bright-color;
 }
 
 a {
@@ -78,7 +84,7 @@ nav {
     a {
       padding-bottom: 5px;
       &:hover {
-        border-bottom: 2px solid white;
+        border-bottom: 2px solid $bright-color;
       }
     }
   }
@@ -87,21 +93,52 @@ nav {
 .intro {
   text-align: center;
   padding: 80px 50px;
-  hr {
-    width: 70%;
-  }
+}
 
+hr {
+  width: 70%;
 }
 
 h2 {
   text-align: center;
 }
 
-.about-me {
+section {
+  padding: 50px 0;
+}
+
+.btn {
+  border: 1px solid $bright-color;
+  padding: 10px 20px;
+  border-radius: 50px;
+  &:hover {
+    color: white;
+    background-color: $bright-color;
+  }
+}
+
+.btn-resume {
+  
+}
+
+.about-me-container {
   p {
     padding: 0 30px;
     font-size: 1.2em;
   }
+}
+
+.portfolio-container {
+  min-height: auto;
+}
+
+
+.carousel-cell {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
 }
 
 footer {
@@ -118,14 +155,16 @@ footer {
 
 /* Desktop and Tablet */
 @media (min-width: 1000px) {
+
   .intro {
     padding: 150px 50px;
-    hr {
-      width: 30%;
-    }
   }
 
-  .about-me {
+  hr {
+      width: 30%;
+    }
+
+  .about-me-container {
     p {
       padding: 0 200px;
     }
