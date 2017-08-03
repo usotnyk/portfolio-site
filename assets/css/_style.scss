@@ -33,11 +33,11 @@ body {
   font-family: $main-font-family;
   font-size: 18px;
   margin: 0px;
-  color: $text-color-dark;
+  color: $font-color-dark;
 }
 
 .text-white {
-  color: white;
+  color: $font-color-light;
 }
 
 .text-bright {
@@ -47,6 +47,10 @@ body {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+h2 {
+  text-transform: uppercase;
 }
 
 //Margins and paddings
@@ -118,8 +122,32 @@ section {
 }
 
 .btn-resume {
-  
+
+  align-self: center;
+  border: 3px solid $bright-color;
+  i {
+    padding-right: 10px;
+  }
 }
+
+.scroll-down {
+  //width: 170px;
+  padding-bottom: 20px;
+  color: $bright-color;
+  min-height: 50px;
+  .hide-on-hover {
+    font-size: 2em;
+  }
+}
+ .show-on-hover{ 
+   display: none;
+ }
+ .scroll-down:hover .show-on-hover{
+   display : block;
+ }
+ .scroll-down:hover .hide-on-hover{
+   display : none;
+ }
 
 .about-me-container {
   p {
@@ -141,8 +169,38 @@ section {
   text-align: center;
 }
 
+.contact {
+  flex-direction: column;
+  background-color: $secondary-color;
+  padding: 90px;
+  p {
+    color: darken($font-color-light, 30%);
+  }
+  .email {
+    display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 1px solid $bright-color;
+    margin-bottom: 30px;
+    &:hover {
+      border-bottom: 1px solid $bright-color;
+      color: $bright-color;
+    } 
+  }
+  i {
+    font-size: 1.2em;
+  }
+  a:hover {
+    color: $bright-color;
+  }
+}
+
+.email, .soial {
+  //font-size: 1.3em;
+}
+
 footer {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), url(../assets/images/background_footer.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+  background-color: $secondary-color;
   min-height: 100px;
     -webkit-background-size: cover, cover;
   -moz-background-size: cover, cover;
@@ -151,6 +209,8 @@ footer {
   background-repeat: no-repeat, no-repeat;
   background-position: left top, left top;
   background-attachment: fixed, fixed;
+  font-size: 0.7em;
+  color: darken($font-color-light, 30%);
 }
 
 /* Desktop and Tablet */
@@ -168,5 +228,9 @@ footer {
     p {
       padding: 0 200px;
     }
+  }
+
+  .contact {
+    flex-direction: row;
   }
 }

@@ -18,7 +18,7 @@
 <body>
 <main>
 <!-- HEADER -->
-  <header class="text-white text-center">
+  <header class="text-white text-center flex flex-column flex-justify-space-between">
     <nav class="flex flex-justify-space-between padding-md">
       <div class="text-bright">
         <a href="">JS</a>
@@ -41,7 +41,15 @@
       <hr>
       <h4>Toronto, Canada</h4>
     </div>
-    <a href="Julia_Sotnyk_resume_l.pdf" target="_blank" class="btn btn-resume">Download resume</a>
+    <a href="Julia_Sotnyk_resume_l.pdf" target="_blank" class="btn btn-resume">
+      <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+      <span>Open resume</span>
+    </a>
+    <a href="#" class="scroll-down">
+      <i class="fa fa-angle-double-down hide-on-hover" aria-hidden="true"></i>
+      <span class="show-on-hover">SCROLL DOWN</span>
+    </a>
+
   </header>
 <!-- End of HEADER -->
 
@@ -81,12 +89,30 @@
     </div> <!-- end main-carousel -->
 
   </section>
-  <hr>
+  <!-- <hr> -->
 <!-- End of Portfolio -->
 
 <!-- Contact -->
-  <h2>Contact Info</h2>
-  <section>
+  <!-- <h2>Contact Info</h2> -->
+  <section class="flex contact text-white flex-align-center">
+    <div>
+      <h2>Contact me</h2>
+      <p class="text-center">Feel free to reach out, I'd love to hear from you.</p>
+    </div>
+    <div>
+      <a href="mailto:usotnyk@gmail.com" class="email">usotnyk@gmail.com</a>
+      <div class="flex flex-justify-space-between">
+        <a href="" class="">
+          <i class="fa fa-envelope-o social" aria-hidden="true"></i>
+        </a>
+        <a href="">
+          <i class="fa fa-linkedin" aria-hidden="true">
+        </a></i>
+        <a href="">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
   </section>
 <!-- End of Contact -->
 
