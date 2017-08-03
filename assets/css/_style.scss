@@ -27,6 +27,8 @@
   align-self: center;
 }
 
+
+
 //Fonts and colors
 
 body {
@@ -125,13 +127,15 @@ section {
 
   align-self: center;
   border: 3px solid $bright-color;
+  margin-bottom: 30px;
   i {
     padding-right: 10px;
   }
 }
 
 .scroll-down {
-  //width: 170px;
+
+  width: 170px;
   padding-bottom: 20px;
   color: $bright-color;
   min-height: 50px;
@@ -150,10 +154,36 @@ section {
  }
 
 .about-me-container {
-  p {
+  p, .tech-stack, .hobbies {
     padding: 0 30px;
+  }
+  p {
     font-size: 1.2em;
   }
+}
+
+.tech-stack, .hobbies {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: $secondary-color;
+  h4 {
+    border-bottom: 1px solid $bright-color;
+    padding-bottom: 5px;
+  }
+
+  ul {
+    padding: 0;
+    min-width: 300px;
+    i {
+      padding: 0px 7px;
+    }
+  }
+}
+
+.hobbies ul {
+  display: flex;
+  justify-content: space-between;
 }
 
 .portfolio-container {
@@ -214,7 +244,8 @@ footer {
 }
 
 /* Desktop and Tablet */
-@media (min-width: 1000px) {
+
+@media (min-width: 900px) {
 
   .intro {
     padding: 150px 50px;
@@ -225,12 +256,30 @@ footer {
     }
 
   .about-me-container {
-    p {
+    p, .tech-stack, .hobbies {
       padding: 0 200px;
     }
   }
 
+  .tech-stack, .hobbies {
+  flex-direction: row;
+  }
+
   .contact {
     flex-direction: row;
+    justify-content: space-between;
+
+    h2 {
+      text-align: left;
+    }
+  }
+}
+
+//Extra-small screens
+
+@media (max-width: 400px) {
+  .intro {
+    padding: 60px 50px;
+    font-size: 0.8em;
   }
 }

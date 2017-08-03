@@ -9,6 +9,7 @@
   <script src="https://use.fontawesome.com/e7eadc2fd7.js"></script>
   <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
 
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -25,13 +26,13 @@
       </div>
       <ul class="flex">
         <li class="padding-sm-sides">
-          <a href="#">About</a>
+          <a href="#about" class="smooth-scroll">About</a>
         </li>
         <li class="padding-sm-sides">
-          <a href="#">Portfolio</a>
+          <a href="#portfolio" class="smooth-scroll">Portfolio</a>
         </li>
         <li class="padding-sm-sides">
-          <a href="#">Contact</a>
+          <a href="#contact" class="smooth-scroll">Contact</a>
         </li>
       </ul>
     </nav>
@@ -45,7 +46,7 @@
       <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
       <span>Open resume</span>
     </a>
-    <a href="#" class="scroll-down">
+    <a href="#about" class="scroll-down flex-align-self-center smooth-scroll">
       <i class="fa fa-angle-double-down hide-on-hover" aria-hidden="true"></i>
       <span class="show-on-hover">SCROLL DOWN</span>
     </a>
@@ -54,15 +55,50 @@
 <!-- End of HEADER -->
 
 <!-- About Me -->
-  <h2>About Me</h2>
+  <h2 id="about">About Me</h2>
   <section class="about-me-container">
     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+    <div class="flex flex-column">
+      <div class="flex tech-stack">
+        <h4>
+          <i class="fa fa-code" aria-hidden="true"></i>
+          <span>Tech Stack</span>
+          <!-- <i class="fa fa-code" aria-hidden="true"></i> -->
+        </h4>
+        <ul>
+          <i>HTML</i>
+          <i>CSS</i>
+          <i>Javascript</i>
+          <i>Angular4</i>
+          <br />
+          <i>jQuery</i>
+          <i>SASS</i>
+          <i>PHP</i>
+          <i>Wordpress</i>
+        </ul>
+      </div>
+    
+      <div class="flex hobbies">
+        <h4>
+          <i class="fa fa-child" aria-hidden="true"></i>
+          <span>Free Time</span>
+          <!-- <i class="fa fa-child" aria-hidden="true"></i> -->
+        </h4>
+        <ul>
+          <i class="fa fa-plane" aria-hidden="true"></i>
+          <i class="fa fa-bicycle" aria-hidden="true"></i>
+          <i class="fa fa-book" aria-hidden="true"></i>
+          <i class="fa fa-coffee" aria-hidden="true"></i>
+          <i class="fa fa-comments" aria-hidden="true"></i>
+        </ul>
+      </div>
+    </div>
   </section>
   <hr>
 <!-- END of About Me -->
 
 <!-- Portfolio -->
-  <h2>My Portfolio</h2>
+  <h2 id="portfolio">My Portfolio</h2>
   <section class="portfolio-container">
 
 
@@ -94,7 +130,7 @@
 
 <!-- Contact -->
   <!-- <h2>Contact Info</h2> -->
-  <section class="flex contact text-white flex-align-center">
+  <section class="flex contact text-white flex-align-center" id="contact">
     <div>
       <h2>Contact me</h2>
       <p class="text-center">Feel free to reach out, I'd love to hear from you.</p>
@@ -102,7 +138,7 @@
     <div>
       <a href="mailto:usotnyk@gmail.com" class="email">usotnyk@gmail.com</a>
       <div class="flex flex-justify-space-between">
-        <a href="" class="">
+        <a href="">
           <i class="fa fa-envelope-o social" aria-hidden="true"></i>
         </a>
         <a href="">
@@ -128,25 +164,7 @@
 </body>
 
 <script type="text/javascript">
-  $(document).ready(function(){
 
-    (function insertCurrentYear() {
-      var yearSpan = document.getElementById("year");
-      yearSpan.innerHTML = (new Date().getFullYear());
-    })();
-
-  //Slider - Flickity
-
-    $('.main-carousel').flickity({
-      // options
-      cellAlign: 'center',
-      //contain: true,
-      freeScroll: true,
-      //wrapAround: true,
-      imagesLoaded: true
-    });
-
-  });
 
 </script>
 </html>
