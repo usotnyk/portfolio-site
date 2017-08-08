@@ -37,7 +37,7 @@
       cellAlign: 'center',
       //contain: true,
       freeScroll: true,
-      //wrapAround: true,
+      wrapAround: true,
       imagesLoaded: true
     });
 
