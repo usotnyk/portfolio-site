@@ -113,6 +113,15 @@ section {
   padding: 50px 0;
 }
 
+.section-title {
+  padding-left: 0px;
+  text-align: center;
+}
+
+.desktop-hidden {
+  display: initial;
+}
+
 .btn {
   border: 1px solid $bright-color;
   padding: 10px 20px;
@@ -188,11 +197,19 @@ section {
 
 .portfolio-container {
   min-height: auto;
+  background-color: $feature-color;
+  .desktop-hover {
+    &:hover {
+      color: $bright-color;
+    }
+  }
 }
-
 
 .carousel-cell {
   width: 100%;
+  img {
+    max-width: 60%;
+  }
 }
 
 .text-center {
@@ -247,6 +264,10 @@ footer {
 
 @media (min-width: 900px) {
 
+  .desktop-hidden {
+    display: none;
+  }
+
   .intro {
     padding: 150px 50px;
   }
@@ -254,6 +275,11 @@ footer {
   hr {
       width: 30%;
     }
+
+  .section-title {
+    padding-left: 90px;
+    text-align: left;
+  }
 
   .about-me-container {
     p, .tech-stack, .hobbies {
