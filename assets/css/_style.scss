@@ -185,7 +185,7 @@ section {
     padding-bottom: 5px;
   }
 
-  ul {
+  .list {
     padding: 0;
     min-width: 300px;
     i {
@@ -194,7 +194,7 @@ section {
   }
 }
 
-.hobbies ul {
+.hobbies .list {
   display: flex;
   justify-content: space-between;
 }
