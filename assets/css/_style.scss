@@ -124,8 +124,9 @@ section {
 
 .btn {
   border: 1px solid $bright-color;
-  padding: 10px 20px;
+  padding: 10px 30px;
   border-radius: 50px;
+  text-transform: uppercase;
   &:hover {
     color: white;
     background-color: $bright-color;
@@ -163,6 +164,9 @@ section {
  }
 
 .about-me-container {
+  p {
+    text-align: justify;
+  }
   p, .tech-stack, .hobbies {
     padding: 0 30px;
   }
@@ -210,6 +214,10 @@ section {
   img {
     max-width: 60%;
   }
+}
+
+.portfolio-description {
+  padding: 20px 30px;
 }
 
 .text-center {
@@ -285,10 +293,21 @@ footer {
     p, .tech-stack, .hobbies {
       padding: 0 200px;
     }
+    a {
+      border-bottom: 0.5px dotted grey;
+      &:hover {
+        color: $bright-color;
+        border-bottom: 0.5px dotted $bright-color;
+      }
+    }
   }
 
   .tech-stack, .hobbies {
   flex-direction: row;
+  }
+
+  .portfolio-description {
+    padding: 20px 200px;
   }
 
   .contact {
