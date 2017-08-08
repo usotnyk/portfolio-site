@@ -75,7 +75,7 @@ header {
   background-position: center, center;
   background-attachment: fixed, fixed;
 
-  height: 100vh;
+  min-height: 100vh;
 }
 
 nav {
@@ -322,9 +322,9 @@ footer {
 
 //Extra-small screens
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .intro {
-    padding: 60px 50px;
+    padding: 40px;
     font-size: 0.8em;
   }
 }
