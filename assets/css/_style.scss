@@ -99,6 +99,7 @@ nav {
 .intro {
   text-align: center;
   padding: 80px 50px;
+  font-size: 0.9em;
 }
 
 hr {
@@ -324,7 +325,16 @@ footer {
 
 @media (max-width: 420px) {
   .intro {
-    padding: 40px;
-    font-size: 0.8em;
+    padding: 30px;
+    font-size: 0.7em;
+    h2 {
+      font-size: 1.2em;
+    }
+  }
+
+  .carousel-cell {
+    h3 {
+      padding: 0 70px;
+    }
   }
 }
