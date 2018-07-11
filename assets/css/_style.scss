@@ -1,6 +1,4 @@
-// * {
-//   border: 1px solid black;
-// }
+// v 1.0
 
 //Flex
 .flex {
@@ -135,7 +133,6 @@ section {
 }
 
 .btn-resume {
-
   align-self: center;
   border: 3px solid $bright-color;
   margin-bottom: 30px;
@@ -145,7 +142,6 @@ section {
 }
 
 .scroll-down {
-
   width: 170px;
   padding-bottom: 20px;
   color: $bright-color;
@@ -214,7 +210,8 @@ section {
 .carousel-cell {
   width: 100%;
   img {
-    max-width: 50%;
+    max-width: 60%;
+    max-height: 40vh;
   }
 }
 
@@ -318,6 +315,13 @@ footer {
 
     h2 {
       text-align: left;
+    }
+  }
+
+  .carousel-cell {
+    img {
+      max-width: 50%;
+      max-height: 60vh;
     }
   }
 }
