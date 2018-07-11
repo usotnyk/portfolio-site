@@ -38,7 +38,8 @@
       //contain: true,
       freeScroll: true,
       wrapAround: true,
-      imagesLoaded: true
+      imagesLoaded: true,
+      autoPlay: 5000,
     });
 
   });
